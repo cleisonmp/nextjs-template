@@ -1,4 +1,3 @@
-import { ReactElement } from 'react'
 import { NextPageWithLayout } from './page'
 
 import { PrimaryLayout } from '../components/layouts/primary/'
@@ -18,8 +17,6 @@ const Home: NextPageWithLayout = () => {
   )
 }
 
-Home.getLayout = function getLayout(page: ReactElement) {
-  return <PrimaryLayout>{page}</PrimaryLayout>
-}
+Home.layout = PrimaryLayout
 
 export default Home

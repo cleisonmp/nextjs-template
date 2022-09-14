@@ -9,8 +9,6 @@ const About: NextPageWithLayout = () => {
   )
 }
 
-export default About
+About.layout = PrimaryLayout
 
-About.getLayout = (page) => {
-  return <PrimaryLayout>{page}</PrimaryLayout>
-}
+export default About

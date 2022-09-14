@@ -5,18 +5,16 @@ import { PrimaryLayout } from '../components/layouts/primary/'
 import { SampleCard } from '../components/common/cards/sample'
 import { mockSampleCardProps } from '../components/common/cards/sample/SampleCard.mocks'
 
-import styles from '../styles/Home.module.css'
-
 const Home: NextPageWithLayout = () => {
   return (
-    <section className={styles.main}>
-      <h1 className={styles.title}>Next.js template</h1>
+    <main className='flex flex-1 flex-col w-full p-4 gap-4'>
+      <h1 className='text-gray-900'>Next.js template</h1>
 
-      <div className={styles.grid}>
+      <div className='grid grid-cols-2 max-w-fit gap-10'>
         <SampleCard {...mockSampleCardProps.base} />
         <SampleCard {...mockSampleCardProps.base} />
       </div>
-    </section>
+    </main>
   )
 }
 

@@ -2,14 +2,13 @@
 <pre>
 This is a base template for Next.js apps with my preferred base settings.
 
-
 </pre>
 
 <h3>:eye_speech_bubble: Live demo</h3>
 
 Check live demonstration [here](https://cleisonmp-nextjs-template.vercel.app/)
 
-## :package::wrench: 
+## :package::wrench:
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [ESLint](https://eslint.org/)
@@ -18,8 +17,8 @@ Check live demonstration [here](https://cleisonmp-nextjs-template.vercel.app/)
 - [Debugging](https://nextjs.org/docs/advanced-features/debugging)
 - [Storybook](https://storybook.js.org/)
 - [Layouts](https://nextjs.org/docs/basic-features/layouts)
+- [Tailwindcss](https://tailwindcss.com/)
 - Component Template
-
 
 ## 🚀 Clone
 

@@ -2,15 +2,13 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import styles from '../styles/404.module.css'
-
 export default function Custom404() {
   return (
     <>
       <Head>
         <title>404 Not Found</title>
       </Head>
-      <main className={styles.main}>
+      <main className='flex flex-col items-center max-w-3xl mx-auto px-2 min-w-[320px] gap-5 grow w-full'>
         <Image src='/404.svg' width={600} height={450} alt='' />
         <div className='flex flex-col gap-4'>
           <h1 className='text-gray-300 font-bold text-2xl'>

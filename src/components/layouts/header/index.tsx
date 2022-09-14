@@ -1,19 +1,18 @@
 import Link from 'next/link'
-import styles from './Header.module.css'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface HeaderProps {}
 
 export const Header = () => {
   return (
-    <header className={styles.header}>
+    <header className='flex p-4 gap-4 items-center'>
       <Link href='/'>
-        <a>Home</a>
+        <a className='border border-gray-400 p-2'>Home</a>
       </Link>
       <Link href='/about'>
-        <a>About</a>
+        <a className='border border-gray-400 p-2'>About</a>
       </Link>
-      <input className={styles.input} placeholder='Search...' />
+      <input className='text-gray-900 w-1/3 text-lg' placeholder='Search...' />
     </header>
   )
 }

@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import styles from './SampleCard.module.css'
 
 export interface SampleCardProps {
   tag: string
@@ -22,34 +21,41 @@ export const SampleCard = ({
   time,
 }: SampleCardProps) => {
   return (
-    <div className={styles.container}>
-      <div className={styles.card}>
-        <div className={styles.card__header}>
-          <Image
-            src={imageUrl}
-            alt=''
-            className={styles.card__image}
-            width='600'
-            height='400'
-          />
-        </div>
-        <div className={styles.card__body}>
-          <span className={`${styles.tag} ${styles['tag-blue']}`}>{tag}</span>
-          <h4>{title}</h4>
+    <div className='flex flex-col rounded-3xl bg-gray-300 text-gray-900 shadow-lg w-[25rem] gap-4 font-[Roboto] overflow-hidden'>
+      <div className=''>
+        <Image
+          src={imageUrl}
+          alt=''
+          className='max-w-full object-cover'
+          width='600'
+          height='400'
+        />
+      </div>
+      <div className='flex flex-col gap-8 p-4'>
+        <div className='flex flex-col gap-3'>
+          <span
+            className={
+              'px-4 py-1 w-min rounded-full bg-gradient-to-b from-blue-800 to-blue-300 text-white text-xs'
+            }
+          >
+            {tag}
+          </span>
+          <h4 className='font-bold'>{title}</h4>
           <p>{body}</p>
         </div>
-        <div className={styles.card__footer}>
-          <div className={styles.user}>
+        <div className=''>
+          <div className='flex gap-3 items-center'>
             <Image
               src={author.avatarUrl}
               alt='user__image'
-              className={styles.user__image}
+              className='rounded-full'
               width='40'
               height='40'
             />
-            <div className={styles.user__info}>
-              <h5>{author.name}</h5>
-              <small>{time}</small>
+
+            <div className='flex flex-col leading-none gap-1'>
+              <h5 className=''>{author.name}</h5>
+              <small className='text-gray-500'>{time}</small>
             </div>
           </div>
         </div>

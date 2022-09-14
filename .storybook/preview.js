@@ -2,12 +2,13 @@ import '../src/styles/globals.css'
 import * as NextImage from 'next/image'
 
 const BREAKPOINTS_INT = {
+  xxs: 320,
   xs: 480,
   sm: 640,
   md: 768,
   lg: 1024,
   xl: 1280,
-  xxl: 1536,
+  '2xl': 1536,
 }
 
 const customViewports = Object.fromEntries(

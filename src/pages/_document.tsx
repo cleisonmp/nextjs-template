@@ -11,7 +11,7 @@ export default function Document() {
 
         <link rel='shortcut icon' href='/favicon.ico' type='image/ico' />
       </Head>
-      <body>
+      <body className='bg-gray-500 text-gray-50'>
         <Main />
         <NextScript />
       </body>

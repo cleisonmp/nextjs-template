@@ -3,9 +3,9 @@ import { NextPageWithLayout } from './page'
 
 const About: NextPageWithLayout = () => {
   return (
-    <section>
+    <main>
       <h2>Layout Example (About)</h2>
-    </section>
+    </main>
   )
 }
 

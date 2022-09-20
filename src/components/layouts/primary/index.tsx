@@ -10,10 +10,14 @@ export interface PrimaryLayoutProps {
 
 export const PrimaryLayout = ({ children }: PrimaryLayoutProps) => {
   return (
-    <div className='flex flex-col h-screen px-8 py-4 gap-4'>
-      <Header />
-      {children}
-      <Footer />
-    </div>
+    <>
+      <div className='flex flex-col h-screen px-8 py-4 gap-4 mx-auto'>
+        <Header />
+        <div className='flex flex-col max-w-360 w-full mx-auto'>
+          {children}
+          <Footer />
+        </div>
+      </div>
+    </>
   )
 }

@@ -21,7 +21,7 @@ export const SampleCard = ({
   time,
 }: SampleCardProps) => {
   return (
-    <div className='flex flex-col rounded-3xl bg-gray-300 text-gray-900 shadow-lg w-[25rem] gap-4 font-[Roboto] overflow-hidden'>
+    <div className='flex flex-col rounded-3xl bg-gray-300 text-gray-900 shadow-lg w-[25rem] gap-4 overflow-hidden'>
       <div className=''>
         <Image
           src={imageUrl}

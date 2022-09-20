@@ -11,10 +11,11 @@ export default function Document() {
 
         <link rel='shortcut icon' href='/favicon.ico' type='image/ico' />
       </Head>
-      <body className='bg-gray-500 text-gray-50'>
+      <body className='bg-app-background text-app-text'>
         <Main />
         <NextScript />
       </body>
     </Html>
   )
 }
+//<body className='bg-gray-800 text-gray-900 font-["Roboto_Mono"]'></body>

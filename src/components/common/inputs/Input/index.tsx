@@ -93,7 +93,7 @@ export const Input = forwardRef<HTMLInputElement, InputComponentProps>(
               disabled={disabled}
               placeholder={'\u00A0'}
               className={classNames(
-                'peer w-full placeholder-transparent outline-none focus:outline-none transition-all', //autofill:bg-white
+                'peer w-full placeholder-transparent outline-none focus:outline-none transition-all',
                 'disabled:cursor-not-allowed', //fixed values
                 Object.values(inputClasses), //array of props
               )}

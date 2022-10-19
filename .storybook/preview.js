@@ -1,5 +1,6 @@
-import '../src/styles/globals.css'
 import * as NextImage from 'next/image'
+import { themes } from '@storybook/theming'
+import '../src/styles/globals.css'
 
 const BREAKPOINTS_INT = {
   xxs: 320,
@@ -44,4 +45,7 @@ export const parameters = {
     },
   },
   viewport: { viewports: customViewports },
+  docs: {
+    theme: themes.dark,
+  },
 }

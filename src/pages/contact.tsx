@@ -47,7 +47,7 @@ const Contact: NextPageWithLayout = () => {
   }
 
   return (
-    <main className='flex flex-1 flex-col w-full p-4 gap-5'>
+    <main className='flex w-full flex-1 flex-col gap-5 p-4'>
       <h2>Layout Example (Contact)</h2>
       <FormProvider {...formContextData}>
         <form
@@ -55,7 +55,7 @@ const Contact: NextPageWithLayout = () => {
             handleFormSubmit,
             formWithError,
           )}
-          className='flex flex-col p-8 w-full bg-gray-50 rounded-xl border shadow-lg gap-4'
+          className='flex w-full flex-col gap-4 rounded-xl border bg-gray-50 p-8 shadow-lg'
         >
           <Input
             label='Default'

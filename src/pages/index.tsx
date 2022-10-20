@@ -9,10 +9,10 @@ const Home: NextPageWithLayout = () => {
   return (
     <>
       <Seo />
-      <main className='flex flex-1 flex-col w-full p-4 gap-4'>
+      <main className='flex w-full flex-1 flex-col gap-4 p-4'>
         <h1 className='text-gray-900'>Next.js template</h1>
 
-        <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 max-w-fit gap-10'>
+        <div className='grid max-w-fit grid-cols-1 gap-10 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4'>
           <SampleCard {...mockSampleCardProps.base} />
           <SampleCard {...mockSampleCardProps.base} />
           <SampleCard {...mockSampleCardProps.base} />

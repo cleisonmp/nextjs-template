@@ -21,7 +21,7 @@ export const SampleCard = ({
   time,
 }: SampleCardProps) => {
   return (
-    <div className='flex flex-col rounded-3xl bg-gray-300 text-gray-900 shadow-lg w-[25rem] gap-4 overflow-hidden'>
+    <div className='flex w-[25rem] flex-col gap-4 overflow-hidden rounded-3xl bg-gray-300 text-gray-900 shadow-lg'>
       <div className=''>
         <Image
           src={imageUrl}
@@ -35,7 +35,7 @@ export const SampleCard = ({
         <div className='flex flex-col gap-3'>
           <span
             className={
-              'px-4 py-1 w-min rounded-full bg-gradient-to-b from-blue-800 to-blue-300 text-white text-xs'
+              'w-min rounded-full bg-gradient-to-b from-blue-800 to-blue-300 px-4 py-1 text-xs text-white'
             }
           >
             {tag}
@@ -44,7 +44,7 @@ export const SampleCard = ({
           <p>{body}</p>
         </div>
         <div className=''>
-          <div className='flex gap-3 items-center'>
+          <div className='flex items-center gap-3'>
             <Image
               src={author.avatarUrl}
               alt='user__image'
@@ -53,7 +53,7 @@ export const SampleCard = ({
               height='40'
             />
 
-            <div className='flex flex-col leading-none gap-1'>
+            <div className='flex flex-col gap-1 leading-none'>
               <h5 className=''>{author.name}</h5>
               <small className='text-gray-500'>{time}</small>
             </div>

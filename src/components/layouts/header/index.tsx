@@ -26,7 +26,7 @@ export const Header = () => {
     console.log('handleSearchIconClick')
   }
   return (
-    <header className='sticky top-0 left-0 flex p-4 gap-4 items-center bg-app-background w-full z-9999'>
+    <header className='sticky top-0 left-0 z-9999 flex w-full items-center gap-4 bg-app-background p-4'>
       <Link href='/'>
         <a className='border border-gray-400 p-2'>Home</a>
       </Link>
@@ -36,7 +36,7 @@ export const Header = () => {
       <Link href='/contact'>
         <a className='border border-gray-400 p-2'>Contact</a>
       </Link>
-      <div className='flex items-center text-gray-900 w-1/3 text-lg'>
+      <div className='flex w-1/3 items-center text-lg text-gray-900'>
         <Input
           label='Search...'
           hasBorder={false}

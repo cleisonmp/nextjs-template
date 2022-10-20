@@ -11,9 +11,9 @@ export interface PrimaryLayoutProps {
 export const PrimaryLayout = ({ children }: PrimaryLayoutProps) => {
   return (
     <>
-      <div className='flex flex-col h-screen px-8 py-4 gap-4 mx-auto'>
+      <div className='mx-auto flex h-screen flex-col gap-4 px-8 py-4'>
         <Header />
-        <div className='flex flex-col max-w-360 w-full mx-auto'>
+        <div className='max-w-360 mx-auto flex w-full flex-col'>
           {children}
           <Footer />
         </div>

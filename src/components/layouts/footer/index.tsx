@@ -5,7 +5,7 @@ export interface FooterProps {}
 
 export const Footer = () => {
   return (
-    <footer className='flex p-4 items-center justify-center'>
+    <footer className='flex items-center justify-center p-4'>
       <a
         href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
         target='_blank'

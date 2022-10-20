@@ -82,7 +82,7 @@ export const Input = forwardRef<HTMLInputElement, InputComponentProps>(
 
     return (
       <>
-        <div className='flex flex-col w-full justify-center '>
+        <div className='flex w-full flex-col justify-center '>
           <div className='relative flex h-fit items-center text-center'>
             <input
               id={id ?? name}
@@ -93,7 +93,7 @@ export const Input = forwardRef<HTMLInputElement, InputComponentProps>(
               disabled={disabled}
               placeholder={'\u00A0'}
               className={classNames(
-                'peer w-full placeholder-transparent outline-none focus:outline-none transition-all',
+                'peer w-full placeholder-transparent outline-none transition-all focus:outline-none',
                 'disabled:cursor-not-allowed', //fixed values
                 Object.values(inputClasses), //array of props
               )}
@@ -101,7 +101,7 @@ export const Input = forwardRef<HTMLInputElement, InputComponentProps>(
             <label
               htmlFor={id ?? name}
               className={classNames(
-                'absolute left-2 top-0 -translate-y-1/2 z-[1] px-2 transition-all',
+                'absolute left-2 top-0 z-[1] -translate-y-1/2 px-2 transition-all',
                 'peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2',
                 { 'peer-placeholder-shown:left-10': hasLeftIcon },
                 'peer-focus:top-0 peer-focus:left-2',
@@ -145,7 +145,7 @@ export const Input = forwardRef<HTMLInputElement, InputComponentProps>(
           </div>
           <div
             className={classNames(
-              'flex relative w-full px-4 py-1 transition-all',
+              'relative flex w-full px-4 py-1 transition-all',
               'text-xs',
               { 'hidden': !helperText?.length },
               Object.values(errorLabelClasses),
